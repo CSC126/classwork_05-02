@@ -27,7 +27,7 @@ int main() {
         
         if (i == 20){
             alpha[i] = alpha[i-1] + 1;
-            cout << "Break ";
+            cout <<  alpha[i] << " ";
         } else {
             alpha[i] = alpha[i-1] + 2;
             cout << alpha[i] << " ";

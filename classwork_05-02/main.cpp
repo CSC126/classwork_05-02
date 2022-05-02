@@ -45,8 +45,8 @@ int main() {
     int num = 1;
     for (int i = 0; i < 3; i++){
         for (int j = 0; j < 5; j++){
-            table[i][j] = num;
-            cout << table[i][j];
+            table[i][j] = j + 1;
+            cout << left << setw(3) << table[i][j];
         }
         cout << endl;
         num+= 1;

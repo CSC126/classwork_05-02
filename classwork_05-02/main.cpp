@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main() {
@@ -21,16 +22,20 @@ int main() {
 //
     
     alpha[0] = 1;
-    cout << alpha[0] << " ";
+    cout << left << setw(5) << alpha[0];
     
     for (int i = 1; i < 50; i++){
         
+        if (i % 10 == 0){
+            cout << endl;
+        }
+        
         if (i == 20){
             alpha[i] = alpha[i-1] + 1;
-            cout <<  alpha[i] << " ";
+            cout << left << setw(5) << alpha[i];
         } else {
             alpha[i] = alpha[i-1] + 2;
-            cout << alpha[i] << " ";
+            cout << left << setw(5) << alpha[i];
         }
         
     }

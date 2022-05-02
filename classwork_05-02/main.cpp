@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 
-    int alpha[50] = {0};
+//    int alpha[50] = {0};
     
 //    alpha[0] = 1;
     
@@ -21,24 +21,37 @@ int main() {
 //    }
 //
     
-    alpha[0] = 1;
-    cout << left << setw(5) << alpha[0];
+//    alpha[0] = 1;
+//    cout << left << setw(5) << alpha[0];
+//
+//    for (int i = 1; i < 50; i++){
+//
+//        if (i % 10 == 0){
+//            cout << endl;
+//        }
+//
+//        if (i == 20){
+//            alpha[i] = alpha[i-1] + 1;
+//            cout << left << setw(5) << alpha[i];
+//        } else {
+//            alpha[i] = alpha[i-1] + 2;
+//            cout << left << setw(5) << alpha[i];
+//        }
+//
+//    }
     
-    for (int i = 1; i < 50; i++){
-        
-        if (i % 10 == 0){
-            cout << endl;
+    int table[3][5] = {};
+    
+    int num = 1;
+    for (int i = 0; i < 3; i++){
+        for (int j = 0; j < 5; j++){
+            table[i][j] = num;
+            cout << table[i][j];
         }
-        
-        if (i == 20){
-            alpha[i] = alpha[i-1] + 1;
-            cout << left << setw(5) << alpha[i];
-        } else {
-            alpha[i] = alpha[i-1] + 2;
-            cout << left << setw(5) << alpha[i];
-        }
-        
+        cout << endl;
+        num+= 1;
     }
+    
     
     
     cout << endl << endl;
